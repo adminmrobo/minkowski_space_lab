@@ -66,3 +66,50 @@ m0e = [
 write('m0', {"version": "1.3", "page": P, "nodes": m0n, "edges": m0e}, [CURR, PREV, AWV],
       meta('민코프스키 시공간 0편 가방 점검 — 자·끝없는 방·쌍곡선', '0', 'm0_orientation.html',
            ['lab:concept/hyperbola', 'lab:concept/positive-norm'], ['moe_curriculum', 'ahn_hilbert_lab']))
+
+# ── m1 시계가 걸린 복도 ──
+P = 'm1_clock_corridor'
+NK = {"id": "nickel_kiela_2018", "type": "paper-conference",
+      "title": "Learning Continuous Hierarchies in the Lorentz Model of Hyperbolic Geometry",
+      "author": [{"family": "Nickel", "given": "Maximilian"}, {"family": "Kiela", "given": "Douwe"}],
+      "issued": {"date-parts": [[2018]]}, "container-title": "Proceedings of the 35th International Conference on Machine Learning (ICML)",
+      "URL": "https://arxiv.org/abs/1806.03417",
+      "lab": {"work": "lab:work/nickel_kiela_2018", "role": "background", "supports": ["lab:concept/lorentz-embedding"], "locs": [],
+              "verified": {"title": True, "author": True, "year": True, "url": True}, "checkedBy": DATE}}
+m1n = [
+ N('lab:concept/event', 'Concept', '사건', 'Event', P, '#r1', df='언제·어디를 함께 적은 시공간의 점 하나.'),
+ N('lab:concept/minkowski-space', 'Concept', '민코프스키 시공간', 'Minkowski space', P, '#r2', df='시간 1칸과 공간 3칸을 묶고, 시간 칸만 빼서 거리²를 재는 시공간.'),
+ N('lab:concept/spacetime-interval', 'Concept', '시공간 거리²', 'Spacetime interval', P, '#r2', df='−Δt² + Δx² + Δy² + Δz². 관찰자를 바꿔도 그대로인 부호 있는 값.'),
+ N('lab:concept/light-cone', 'Concept', '빛원뿔', 'Light cone', P, '#r3', df='한 사건에서 빛이 퍼지는 원뿔. 안쪽 시간 쪽(음수), 테두리 빛(0), 바깥 공간 쪽(양수).'),
+ N('lab:concept/lorentz-boost', 'Concept', '관찰자 바꾸기(로렌츠 변환)', 'Lorentz boost', P, '#r4', df="t′ = γ(t − vx), x′ = γ(x − vt). 사건은 거리²가 같은 쌍곡선 위를 미끄러진다."),
+ N('lab:concept/hyperbola', 'Concept', '쌍곡선', 'Hyperbola', P, '#r4', df='−t² + x² = 일정인 점들.', fam='math'),
+ N('lab:concept/time-dilation', 'Concept', '시간 팽창', 'Time dilation', P, '#r4', df='속도 0.6으로 따라간 사람의 시계는 4, 멈춘 사람은 5.'),
+ N('lab:concept/causality', 'Concept', '원인과 결과 판정', 'Causal order', P, '#r5', df='① 거리² ≤ 0 ② Δt > 0이면 원인이 될 수 있다.'),
+ N('lab:concept/relativity-of-simultaneity', 'Concept', '동시의 상대성', 'Relativity of simultaneity', P, '#r5', df='공간 쪽 두 사건의 순서는 관찰자에 따라 뒤집힌다.'),
+ N('lab:claim/no-closed-timelike-curve', 'Claim', '평평한 시공간에는 되돌아오는 시간 길이 없다', 'No closed timelike curves in flat spacetime', P, '#r6', df='원자료의 Loop 그림을 반례로 바로잡음.'),
+ N('lab:concept/minkowski-metric', 'Concept', '부호표 η', 'Minkowski metric', P, '#r7', df='diag(−1, 1, 1, 1). 유클리드는 diag(1, 1, 1, 1).'),
+ N('lab:concept/lorentz-embedding', 'Concept', '로렌츠 모형 임베딩', 'Lorentz-model hyperbolic embedding', P, '#r7', df='쌍곡면 위에 나무 모양 데이터를 놓는 AI 기법.'),
+ N('lab:analogy/parcel-tracking', 'Analogy', '택배 조회의 언제·어디 한 줄', 'Parcel tracking line', P, '#r1'),
+ N('lab:sim/m1-duel', 'Simulation', '원인 탐정 대결', 'Causal detective duel', P, '#duel', df='카드 6장, 시아 4/6(눈), 모아 6/6(계산).'),
+ N('lab:question/m1-curved', 'Question', '휜 시공간에서는 무엇이 달라지나?', 'What changes in curved spacetime?', P, '#sum'),
+]
+m1n[-1]["status"] = "open"
+m1e = [
+ E('lab:concept/event', 'partOf', 'lab:concept/minkowski-space', '#r1'),
+ E('lab:concept/spacetime-interval', 'partOf', 'lab:concept/minkowski-space', '#r2'),
+ E('lab:concept/light-cone', 'derivedFrom', 'lab:concept/spacetime-interval', '#r3'),
+ E('lab:concept/lorentz-boost', 'relatedTo', 'lab:concept/spacetime-interval', '#r4'),
+ E('lab:concept/hyperbola', 'demonstratedBy', 'lab:concept/lorentz-boost', '#r4'),
+ E('lab:concept/time-dilation', 'derivedFrom', 'lab:concept/lorentz-boost', '#r4'),
+ E('lab:concept/causality', 'derivedFrom', 'lab:concept/light-cone', '#r5'),
+ E('lab:concept/relativity-of-simultaneity', 'derivedFrom', 'lab:concept/lorentz-boost', '#r5'),
+ E('lab:claim/no-closed-timelike-curve', 'derivedFrom', 'lab:concept/causality', '#r6'),
+ E('lab:concept/minkowski-metric', 'broader', 'lab:concept/spacetime-interval', '#r7'),
+ E('lab:concept/lorentz-embedding', 'derivedFrom', 'lab:concept/minkowski-metric', '#r7'),
+ E('lab:analogy/parcel-tracking', 'analogyOf', 'lab:concept/event', '#r1'),
+ E('lab:concept/causality', 'demonstratedBy', 'lab:sim/m1-duel', '#duel'),
+ E('lab:concept/minkowski-space', 'hasLimitation', 'lab:question/m1-curved', '#sum'),
+]
+write('m1', {"version": "1.3", "page": P, "nodes": m1n, "edges": m1e}, [AWV, CURR, NK, PREV],
+      meta('민코프스키 시공간 ① — 시계가 걸린 복도', '1', 'm1_clock_corridor.html',
+           ['lab:concept/spacetime-interval', 'lab:concept/light-cone', 'lab:concept/lorentz-boost'], ['awv_minkowski', 'moe_curriculum', 'nickel_kiela_2018']))

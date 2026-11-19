@@ -1,0 +1,39 @@
+{
+ "title": "민코프스키 시공간 ① — 시계가 걸린 복도",
+ "series": "공간 시리즈 · 민코프스키 시공간",
+ "number": "1",
+ "creator": [
+  {
+   "name": "안상선",
+   "role": "author",
+   "affiliation": "(주)M-Robo"
+  }
+ ],
+ "contributor": [
+  {
+   "name": "AI 보조 제작",
+   "role": "assistant"
+  }
+ ],
+ "date": "2026-11-19",
+ "version": "1.0",
+ "language": [
+  "ko"
+ ],
+ "license": "",
+ "url": "https://adminmrobo.github.io/minkowski_space_lab/m1_clock_corridor.html",
+ "about": [
+  "lab:concept/spacetime-interval",
+  "lab:concept/light-cone",
+  "lab:concept/lorentz-boost"
+ ],
+ "basedOn": [
+  "awv_minkowski",
+  "moe_curriculum",
+  "nickel_kiela_2018"
+ ],
+ "educationalLevel": "입문",
+ "learningResourceType": "interactive explainer",
+ "registry": "KG_00_registry 0.2",
+ "suggestedCitation": "안상선 (2026). 민코프스키 시공간 ① — 시계가 걸린 복도. 공간 시리즈 · 민코프스키 시공간 1, v1.0."
+}

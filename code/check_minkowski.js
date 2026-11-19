@@ -52,6 +52,11 @@ const cards = [[5, 3, true], [3, 5, false], [4, 4, true], [-5, 3, false], [5, 4.
 cards.forEach(([dt, dx, want], i) =>
   check(`대결 카드 ${i + 1} (${dt}, ${dx}) → ${want ? "가능" : "불가"}`, canCause(dt, dx) === want, r(interval(dt, dx))));
 
+// AI 답 검사: 자리만 바꾸면 결론이 뒤집힌다
+check("AI검사 (5,5) → 0", interval(5, 5) === 0);
+check("AI검사 (5,6) → +11, 원인 불가", interval(5, 6) === 11 && !canCause(5, 6));
+check("AI검사 유클리드 오답 √34", r(Math.sqrt(euclid(5, 3))) === 5.83);
+
 // 일상 예시: GPS 위성 시계 (교과 수준 근삿값, 하루 μs)
 check("GPS 45 − 7 = 38 μs/일", 45 - 7 === 38);
 

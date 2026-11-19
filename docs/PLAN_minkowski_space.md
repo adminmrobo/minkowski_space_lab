@@ -1,4 +1,4 @@
-# 기획안 v1.2 — 「마이너스 칸이 있는 방 — 시아·모아의 민코프스키 시공간」
+# 기획안 v1.3 — 「마이너스 칸이 있는 방 — 시아·모아의 민코프스키 시공간」
 
 > 원자료: 인포그래픽 「Minkowski Space」(@askwhyvalley) 1장
 > 지침: SPACE_COORDINATE_GUIDE.md v1.0 (원본: [hilbert_space_lab](https://github.com/adminmrobo/hilbert_space_lab)) — 공간 시리즈 세 번째 적용 (유클리드 → 힐베르트 → **민코프스키**)
@@ -59,7 +59,7 @@
 | 4 | 관찰자를 바꿔도 그대로 | 부호·크기가 정말 안 바뀌나? (원 대신 쌍곡선) | 바뀌어도 그대로인 값 = 좋은 특징(데이터 늘리기와 같은 생각) |
 | 5 | 사건마다 원뿔 하나 — 원인과 결과 | 두 사건 중 누가 먼저인지 관찰자마다 달라지는 경우 | 원인-결과 순서, 인과 그래프 |
 | 6 | 되돌아오는 길은 없다 (Loop 바로잡기) | 시간 쪽 길을 따라 과거로 돌아갈 수 있나? | 시계열 예측은 미래 값을 못 본다(비유로만) |
-| 7 | 부호표 한 장 (계량) | 식을 4칸·여러 칸으로 짧게 쓰고 싶다 | 유클리드 = 1만 있는 표, 민코프스키 = −1이 하나 있는 표 → 쌍곡 임베딩(로런츠 모형) |
+| 7 | 부호표 한 장 (계량) | 식을 4칸·여러 칸으로 짧게 쓰고 싶다 | 유클리드 = 1만 있는 표, 민코프스키 = −1이 하나 있는 표 → 쌍곡 임베딩(로렌츠 모형) |
 
 ## 7. 방별 구성 (원자료 그림은 SVG로 다시 그려 실험 패널로)
 c = 1로 둔다(시간을 "빛이 간 거리"로 잼: 1초 ↔ 약 30만 km). 숫자는 `node code/check_minkowski.js`로 검산(전 항목 통과).
@@ -110,12 +110,12 @@ c = 1로 둔다(시간을 "빛이 간 거리"로 잼: 1초 ↔ 약 30만 km). �
 | 자연단위 c = 1 | 시간을 빛이 간 거리로 재기 |
 | 고유시간 | 자기 시계로 잰 시간 |
 | 닫힌 시간꼴 곡선 | 되돌아오는 시간 길(평평한 시공간엔 없음) |
-| 쌍곡 공간·로런츠 모형 | 나무 모양 데이터를 담는 휜 방(이 방의 쌍곡면을 빌림) |
+| 쌍곡 공간·로렌츠 모형 | 나무 모양 데이터를 담는 휜 방(이 방의 쌍곡면을 빌림) |
 
 ## 10. AI·데이터 연결 (박사 정리용, 소개 수준)
 | 연결 | 쉬운 장면 | 근거 |
 |---|---|---|
-| 쌍곡 임베딩(로런츠 모형) | 조직도·분류 체계처럼 갈래가 기하급수로 늘어나는 데이터를 적은 칸에 담기 | Nickel & Kiela, ICML 2018 「Learning Continuous Hierarchies in the Lorentz Model of Hyperbolic Geometry」 — 회사 조직 구조·언어 계통 예시 |
+| 쌍곡 임베딩(로렌츠 모형) | 조직도·분류 체계처럼 갈래가 기하급수로 늘어나는 데이터를 적은 칸에 담기 | Nickel & Kiela, ICML 2018 「Learning Continuous Hierarchies in the Lorentz Model of Hyperbolic Geometry」 — 회사 조직 구조·언어 계통 예시 |
 | 바뀌어도 그대로인 특징 | 사진을 돌려도 얼굴은 같다(유클리드 8번 방) ↔ 관찰자를 바꿔도 간격은 같다 | 입자 물리 데이터 분석에서 이 성질을 지키는 신경망을 쓴다는 점은 이름만 소개(별도 확인 후 표기) |
 | 원인-결과 순서 | 미래 값을 보지 않고 예측하기 | 비유로만 쓰고 "같은 수학"이라고 말하지 않는다 |
 | GPS 시계 보정 | 위성 시계는 하루 약 38μs 빠르게 가므로 보정 | 일상 예시(교과 수준) |
@@ -140,16 +140,14 @@ c = 1로 둔다(시간을 "빛이 간 거리"로 잼: 1초 ↔ 약 30만 km). �
 | 구분 | 그림 | 비고 |
 |---|---|---|
 | 새로 그림 | 표지 1장 (1600×900 WebP) | 벽시계가 걸린 흰 복도, 바닥에 빛원뿔 |
-| 새로 그림 | 방 장면 7장 (1200×800 WebP) | 시아·모아 표정 방마다 다르게 |
+| 새로 그림 | 방 장면 7장 (1200×800 WebP, 픽셀아트) | 시아·모아 표정 방마다 다르게 |
 | 새로 그림 | 대결 1장, 아웃트로 1장 | 아웃트로 표정은 대결 결과와 맞춤 |
 | 표지에서 자름 | 목차 썸네일, og:image | 별도 폴더 |
 | 재사용 | 박사·조수·초파리·주판봇·X1~X3 | fruitfly-lab-expressions |
 
-### 표지 프롬프트 (초안)
-> Bright daytime research lab corridor, clean white walls, seven numbered doors each with a round wall clock above it showing different times. On the floor, a large translucent double cone of light — soft green upper cone and soft blue lower cone meeting at a single glowing point, with a thin orange rim line. Faint hyperbola curves and a ct–x axis drawn in the air. Two young female interns in maid-style lab outfits — one with black hair pointing at the glowing point, one with beige hair holding a notebook and a stopwatch — stand beside the cone. Cute anime style matching the reference character sheet, soft teal, orange and navy accents, white background dominant, generous empty space on the right for title text. 16:9.
-
-### 첫 화면 배경 프롬프트
-- white lab room, a translucent green-and-blue double light cone on a faint grid floor, one orange hyperbola curve sweeping beside it, minimal, lots of white space, 16:9.
+### 그림 지시문
+- **16비트 RPG 픽셀아트**로 받는다(연구실 해설 그림 지침). 표지 3장·장면 9장 지시문과 저장 이름 체크리스트는 [docs/COVER_PROMPTS.md](COVER_PROMPTS.md).
+- v1.2까지의 애니메이션풍 초안은 지침과 맞지 않아 폐기했다.
 
 ## 14. 검증 계획
 - 숫자 예시 전부 검산 — `node code/check_minkowski.js` 30항목 통과(2026-11-19).
@@ -162,9 +160,10 @@ c = 1로 둔다(시간을 "빛이 간 거리"로 잼: 1초 ↔ 약 30만 km). �
 2. ~~남은 확정~~ → 페르소나 평가(6인) 후 원인 탐정 대결·4번 방 쌍곡선 실험 모두 채택(v1.2)
 3. 지침서 v1.1 — §3 공간 사다리에 "민코프스키(부호 있는 길이)" 추가, §9 용어 추가분 반영
 4. ~~사실 카드 7장 + 캐릭터 대본~~ → docs/FACT_CARDS.md · docs/SCRIPT.md (2026-11-19)
-5. ~~0편~~(m0_orientation.html, 목차 index.html 완료 2026-11-19) → ①편 HTML → 검증 → 그림 요청 꾸러미 → 지식 색인·꾸러미 → 페르소나 평가
+5. ~~0편·목차~~(2026-11-19) → ~~①편 HTML·검증·지식 색인~~(m1_clock_corridor.html, 2026-11-20) → ~~수포자 스킬 감사~~(AI 답 검사 코너·읽는 법·현장 사례 추가) → 그림 요청(픽셀아트, docs/COVER_PROMPTS.md) → 그림 반영 → 페르소나 평가
 6. 힐베르트 ②편 아웃트로에 다음 복도 카드 추가
 
 ## 고친 내역
+- v1.3 (2026-11-20): ①편 완성, 수포자 스킬 감사 반영(AI 답 검사 코너 m0·m1, 기호 읽는 법, 쌍곡선 현장 사례), 용어를 "로렌츠"로 통일, 그림 지시문을 16비트 RPG 픽셀아트로 교체.
 - v1.2 (2026-11-19): 페르소나 평가 후 두 안 채택. 대결에 판정 규칙 두 단계(부호 + 시간 순서)와 카드 6장 확정, 4번 방 슬라이더 범위·유클리드 비교 창·쌍곡선 한 줄 풀이 추가.
 - v1.1 (2026-11-19): 저장소를 minkowski_space_lab으로 확정(§12), 검산 스크립트 추가(§7·§14), 2번 방 값 21.6 → 21.56, 6번 방 숫자 예시 보강.

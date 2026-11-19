@@ -16,7 +16,7 @@
 <nav class="top" aria-label="섹션 바로가기"><div class="row">
   <a class="logo" href="index.html">민코프스키 <i>시공간</i> 0편</a>
   <div class="links">
-    <a href="#bag">가방</a><a href="#bag1">자</a><a href="#bag2">끝없는 방</a><a href="#bag3">쌍곡선</a><a href="#bridge">세 방 비교</a><a href="#check">마지막 점검</a><a href="#kg">색인</a><a href="m1_clock_corridor.html">1번 방 →</a>
+    <a href="#bag">가방</a><a href="#bag1">자</a><a href="#bag2">끝없는 방</a><a href="#bag3">쌍곡선</a><a href="#bridge">세 방 비교</a><a href="#aicheck">AI 검사</a><a href="#check">마지막 점검</a><a href="#kg">색인</a><a href="m1_clock_corridor.html">1번 방 →</a>
   </div>
 </div></nav>
 
@@ -59,7 +59,7 @@
       <li>원은 x² + y² = 일정인 점들입니다.</li>
       <li>쌍곡선은 x² − y² = 일정인 점들이에요. 부호 하나 차이.</li>
       <li>일정한 값이 0이면 두 대각선(45°)이 됩니다.</li></ul>
-      <div class="lk">학교 수학: 기하 — 이차곡선 · 쓰이는 방: 4번(관찰자를 바꾸면 사건이 이 곡선 위를 미끄러짐)</div></div>
+      <div class="lk">현장에서는: 두 기지국에 신호가 닿은 <b>시간 차</b>가 일정한 곳이 쌍곡선입니다. 휴대전화·선박의 위치 찾기에 쓰여요.<br>학교 수학: 기하 — 이차곡선 · 쓰이는 방: 4번</div></div>
   </div>
   <div data-dlg="bag"></div>
 
@@ -106,6 +106,12 @@
     <li><b>시공간 간격(spacetime interval) ds²</b> — 두 사건 사이의 부호 있는 거리².</li>
     <li><b>쌍곡선(hyperbola)</b> — x² − y² = 일정인 곡선. 고등학교 기하의 이차곡선 단원에 나옵니다.</li>
   </ul></details>
+</div></section>
+
+<section class="sec" id="aicheck" aria-labelledby="h-aic"><div class="wrap">
+  <h2 id="h-aic">AI 답 검사 한 문제</h2>
+  <p class="lead">어떤 AI 챗봇이 "x² − y² = −16은 음수라서 그릴 수 있는 점이 하나도 없습니다"라고 답했습니다. 맞을까요? 실험 ③에서 k = −16 버튼을 눌러 확인해 보세요. 원과 쌍곡선의 규칙을 섞어 쓴 답인지 보는 것이 포인트입니다.</p>
+  <div class="quiz" data-quiz="aic"></div>
 </div></section>
 
 <section class="sec" id="check" aria-labelledby="h-check"><div class="wrap">
@@ -210,7 +216,7 @@ function up03(){var k=K3,c=k>0?'반지름 '+fmt(Math.sqrt(k),2):k===0?'점 하�
 var r03=$('#s03');function set03(v){K3=v;r03.value=v;$('#v03').textContent=sg(v);up03();}r03.oninput=function(){set03(+r03.value);};$$('[data-k03]').forEach(function(b){b.onclick=function(){set03(+b.dataset.k03);};});up03();
 
 U.Gloss({'쌍곡선':['쌍곡선','hyperbola','x² − y² = 일정인 점들. 원(x² + y² = 일정)과 부호 하나 차이.'],'길이²':['길이²','squared norm','칸마다 제곱해서 더한 값. 앞 복도에서는 언제나 0 이상.'],'원점':['원점','origin','두 축이 만나는 (0, 0).']},['쌍곡선','길이²']);
-U.Study({quiz:{chk:[
+U.Study({quiz:{aic:[{q:'AI의 답 "x² − y² = −16인 점은 없다"는?',o:['틀렸다 — (3, 5)처럼 위아래 두 갈래로 있다','맞다 — 음수는 그릴 수 없다','맞다 — 원과 같다','틀렸다 — 원점 하나만 있다'],a:0,why:'9 − 25 = −16이니 (3, 5)가 곡선 위에 있습니다. "음수면 없다"는 원(x² + y²)의 규칙이에요.',hint:'실험 ③의 k = −16 버튼.'}],chk:[
  {q:'화살표 (3, 4)를 원점 둘레로 90° 돌리면 길이는?',o:['5','7','25','0'],a:0,why:'돌려도 길이는 그대로입니다. (−4, 3)이 되어도 √(16 + 9) = 5.',hint:'실험 ① 자 카드를 다시 보세요.'},
  {q:'앞 복도(유클리드·힐베르트)에서 길이²가 0이 되는 점은?',o:['원점 하나뿐','대각선 위의 모든 점','없다','음수 칸이 있는 점'],a:0,why:'제곱의 합이 0이려면 모든 칸이 0이어야 합니다.',hint:'실험 ② 끝없는 방의 규칙 — 버튼을 누르기 전 상태.'},
  {q:'x² − y² = 0인 곡선은 어떤 모양인가요?',o:['45° 두 직선','반지름 0인 원','좌우 두 갈래 쌍곡선','곡선이 없다'],a:0,why:'x² = y²이면 y = x 또는 y = −x — 두 대각선입니다.',hint:'실험 ③에서 k = 0 버튼을 눌러 보세요.'}]}});
