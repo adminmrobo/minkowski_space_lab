@@ -46,6 +46,12 @@ const metric = (d, t, x) => d[0] * t * t + d[1] * x * x;
 check("7번 diag(1,1) → 34", metric([1, 1], 5, 3) === 34);
 check("7번 diag(−1,1) → −16", metric([-1, 1], 5, 3) === -16);
 
+// 대결: 원인 탐정 — 규칙 ① 거리² ≤ 0 ② Δt > 0
+const canCause = (dt, dx) => interval(dt, dx) <= 0 && dt > 0;
+const cards = [[5, 3, true], [3, 5, false], [4, 4, true], [-5, 3, false], [5, 4.9, true], [4.9, 5, false]];
+cards.forEach(([dt, dx, want], i) =>
+  check(`대결 카드 ${i + 1} (${dt}, ${dx}) → ${want ? "가능" : "불가"}`, canCause(dt, dx) === want, r(interval(dt, dx))));
+
 // 일상 예시: GPS 위성 시계 (교과 수준 근삿값, 하루 μs)
 check("GPS 45 − 7 = 38 μs/일", 45 - 7 === 38);
 
