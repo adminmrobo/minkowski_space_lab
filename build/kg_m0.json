@@ -1,0 +1,223 @@
+{
+ "version": "1.3",
+ "page": "m0_orientation",
+ "nodes": [
+  {
+   "id": "lab:concept/rotation-invariance",
+   "type": "Concept",
+   "label": {
+    "ko": "돌려도 길이는 그대로",
+    "en": "Rotation preserves length"
+   },
+   "page": "m0_orientation",
+   "anchor": "#bag1",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "domain": [
+    "ai"
+   ],
+   "match": [],
+   "definition": {
+    "ko": "화살표를 원점 둘레로 돌려도 x² + y²는 변하지 않아 끝점은 같은 원 위에 있다."
+   }
+  },
+  {
+   "id": "lab:concept/positive-norm",
+   "type": "Concept",
+   "label": {
+    "ko": "길이²는 언제나 0 이상",
+    "en": "Positive-definite norm"
+   },
+   "page": "m0_orientation",
+   "anchor": "#bag2",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "domain": [
+    "ai"
+   ],
+   "match": [],
+   "definition": {
+    "ko": "칸마다 제곱해서 더하므로 길이²는 0 이상이고, 0은 원점뿐이다."
+   }
+  },
+  {
+   "id": "lab:concept/hyperbola",
+   "type": "Concept",
+   "label": {
+    "ko": "쌍곡선",
+    "en": "Hyperbola"
+   },
+   "page": "m0_orientation",
+   "anchor": "#bag3",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "domain": [
+    "ai"
+   ],
+   "match": [],
+   "definition": {
+    "ko": "x² − y² = 일정인 점들. 일정한 값이 0이면 두 대각선이 된다."
+   }
+  },
+  {
+   "id": "lab:sim/m0-bag",
+   "type": "Simulation",
+   "label": {
+    "ko": "가방 점검 실험 세 개",
+    "en": "Bag-check experiments"
+   },
+   "page": "m0_orientation",
+   "anchor": "#bag",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "representation",
+   "domain": [
+    "ai"
+   ],
+   "match": [],
+   "definition": {
+    "ko": "돌리기, 제곱 막대, 원과 쌍곡선 겹쳐 그리기."
+   }
+  },
+  {
+   "id": "lab:concept/minkowski-space",
+   "type": "Concept",
+   "label": {
+    "ko": "민코프스키 시공간",
+    "en": "Minkowski space"
+   },
+   "page": "m1_clock_corridor",
+   "anchor": "m1_clock_corridor.html#r2",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "representation",
+   "domain": [
+    "ai"
+   ],
+   "match": [],
+   "definition": {
+    "ko": "시간 1칸과 공간 3칸을 묶고, 시간 칸만 빼서 거리²를 재는 시공간."
+   }
+  },
+  {
+   "id": "lab:concept/euclidean-space",
+   "type": "Concept",
+   "label": {
+    "ko": "유클리드 공간",
+    "en": "Euclidean space"
+   },
+   "page": "e1_ruler_rooms",
+   "anchor": "https://adminmrobo.github.io/hilbert_space_lab/e1_ruler_rooms.html#r1",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "representation",
+   "domain": [
+    "ai"
+   ],
+   "match": [],
+   "definition": {
+    "ko": "자와 각도기가 있는 n칸짜리 방."
+   }
+  },
+  {
+   "id": "lab:concept/hilbert-space",
+   "type": "Concept",
+   "label": {
+    "ko": "힐베르트 공간",
+    "en": "Hilbert space"
+   },
+   "page": "h1_arrow_rooms",
+   "anchor": "https://adminmrobo.github.io/hilbert_space_lab/h1_arrow_rooms.html#r1",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "representation",
+   "domain": [
+    "ai"
+   ],
+   "match": [],
+   "definition": {
+    "ko": "길이·각도·그림자가 모두 되는 끝없는 방."
+   }
+  },
+  {
+   "id": "lab:question/m0-ready",
+   "type": "Question",
+   "label": {
+    "ko": "시계가 걸린 복도에 들어갈 준비가 됐나?",
+    "en": "Ready for the clock corridor?"
+   },
+   "page": "m0_orientation",
+   "anchor": "#check",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "representation",
+   "domain": [
+    "ai"
+   ],
+   "match": []
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/rotation-invariance",
+   "p": "lab:partOf",
+   "o": "lab:concept/euclidean-space",
+   "anchor": "#bridge",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/positive-norm",
+   "p": "lab:partOf",
+   "o": "lab:concept/hilbert-space",
+   "anchor": "#bridge",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/hyperbola",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/minkowski-space",
+   "anchor": "#bridge",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/positive-norm",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/minkowski-space",
+   "anchor": "#bridge",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rotation-invariance",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/minkowski-space",
+   "anchor": "#bridge",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/hyperbola",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/m0-bag",
+   "anchor": "#bag",
+   "confidence": "high"
+  }
+ ]
+}

@@ -9,10 +9,12 @@
 ## 구성 (제작 중)
 | 파일 | 내용 |
 |---|---|
-| `m0_orientation.html` | 0편 「가방 점검」 — 앞 편 복습 |
+| `index.html` | 목차 |
+| `m0_orientation.html` | 0편 「가방 점검」 — 자·끝없는 방의 규칙·쌍곡선 |
 | `m1_clock_corridor.html` | ①편 「시계가 걸린 복도」 — 방 7개 + 원인 탐정 대결 |
 | `code/check_minkowski.js` | 본문 숫자 검산 (`node code/check_minkowski.js`) |
-| `docs/` | 기획안 · 사실 카드 |
+| `build/` | 페이지 조립 (`python3 build/kg_defs.py && node build/build.js`) |
+| `docs/` | 기획안 · 사실 카드 · 캐릭터 대본 |
 
 ---
 글 · 안상선 ((주)M-Robo 대표)

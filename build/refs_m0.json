@@ -1,0 +1,90 @@
+[
+ {
+  "id": "moe_curriculum",
+  "type": "report",
+  "title": "고등학교 수학·기하·물리학 교육과정",
+  "author": [
+   {
+    "literal": "교육부"
+   }
+  ],
+  "lab": {
+   "work": "lab:work/moe_curriculum",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "url": false
+   },
+   "checkedBy": "교과 단원 이름 대조"
+  }
+ },
+ {
+  "id": "ahn_hilbert_lab",
+  "type": "webpage",
+  "title": "유클리드 공간 · 힐베르트 공간",
+  "author": [
+   {
+    "family": "안",
+    "given": "상선"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2026
+    ]
+   ]
+  },
+  "URL": "https://adminmrobo.github.io/hilbert_space_lab/",
+  "lab": {
+   "work": "lab:work/ahn_hilbert_lab",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "url": true
+   },
+   "checkedBy": "2026-11-19"
+  }
+ },
+ {
+  "id": "awv_minkowski",
+  "type": "graphic",
+  "title": "Minkowski Space",
+  "author": [
+   {
+    "literal": "askwhyvalley"
+   }
+  ],
+  "accessed": {
+   "date-parts": [
+    [
+     2026,
+     11,
+     19
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/awv_minkowski",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "url": false
+   },
+   "checkedBy": "사용자 제공 이미지에서 옮김. 원 게시물 주소·게시일은 받지 못함",
+   "note": "구성과 식만 따르고 그림은 새로 그림"
+  }
+ }
+]

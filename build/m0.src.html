@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>민코프스키 시공간 0편 가방 점검 — 자·끝없는 방·쌍곡선</title>
+<meta name="description" content="시계가 걸린 복도에 들어가기 전에 가방을 점검합니다. 유클리드 방의 자(돌려도 길이 그대로), 힐베르트 방의 규칙(길이²는 언제나 0 이상), 그리고 처음 보는 도구 쌍곡선을 실험 하나씩으로 봅니다.">
+<meta property="og:title" content="민코프스키 시공간 0편 가방 점검">
+<meta property="og:description" content="자·끝없는 방·쌍곡선 — 시계가 걸린 복도에 들어가기 전 5분 복습">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<!--@@CSS@@-->
+</head>
+<body>
+<nav class="top" aria-label="섹션 바로가기"><div class="row">
+  <a class="logo" href="index.html">민코프스키 <i>시공간</i> 0편</a>
+  <div class="links">
+    <a href="#bag">가방</a><a href="#bag1">자</a><a href="#bag2">끝없는 방</a><a href="#bag3">쌍곡선</a><a href="#bridge">세 방 비교</a><a href="#check">마지막 점검</a><a href="#kg">색인</a><a href="m1_clock_corridor.html">1번 방 →</a>
+  </div>
+</div></nav>
+
+<!-- lab-cover : 표지 그림(cover_m0)을 받기 전까지 그림판 표지 -->
+<div class="cover" id="cover" data-img="cover_m0"><div class="frame">
+  <canvas id="coverCv" aria-hidden="true"></canvas>
+  <div class="cast4"><img class="s" data-mood="robo_smile" alt="" aria-hidden="true"><img data-mood="sia_smile" alt="" aria-hidden="true"><img data-mood="moa_tea" alt="" aria-hidden="true"><img class="s" data-mood="doc_board" alt="" aria-hidden="true"></div>
+  <span class="cap">시계가 걸린 복도 앞의 가방 점검</span>
+  <span class="badge">표지 그림 준비 중 · 설명용 그림</span>
+  <span class="cover-chip">민코프스키 시공간 · 0편 가방 점검</span>
+</div></div>
+<!-- /lab-cover -->
+
+<header class="hero" id="top"><div class="wrap">
+  <div class="eyebrow">공간 시리즈 세 번째 복도 · 0편 오리엔테이션 · 5분 복습</div>
+  <h1>0편 가방 점검 — 시계가 걸린 복도에 들어가기 전에</h1>
+  <p class="question">앞 복도에서 쓰던 자와 규칙, 그리고 처음 보는 곡선 하나. 가방에 다 들었나요?</p>
+  <p class="lead">박사가 복도 입구에서 시아와 모아에게 가방 점검을 시킵니다. 꺼낼 물건은 세 개 — <b>자</b>(돌려도 길이가 그대로), <b>끝없는 방의 규칙</b>(길이²는 언제나 0 이상), 그리고 새 도구 <b>쌍곡선</b>입니다. 카드마다 요약 세 줄과 실험 하나만 있어요. 이미 아는 분은 바로 1번 방으로 가셔도 됩니다.</p>
+  <p class="byline">글 · 안상선 ((주)M-Robo 대표) · <a href="https://adminmrobo.github.io/who_am_i/who_am_i.html">저자 소개</a> · 2026-11-19 · v1.0</p>
+  <div class="skip"><a class="bt primary" href="m1_clock_corridor.html">이미 알아요 — 바로 1번 방으로</a><span class="muted" style="font-size:14px">이 쪽은 관문이 아닙니다. 건너뛰어도 ①편을 따라올 수 있어요.</span></div>
+  <div class="start"><b>먼저 보고 오면 좋은 앞 복도</b> <a href="https://adminmrobo.github.io/hilbert_space_lab/">유클리드 공간 · 힐베르트 공간</a>을 보셨다면 자와 각도기, 끝없는 방이 익숙할 거예요. 처음이라면 이 쪽의 카드 세 장으로 충분합니다.</div>
+  <div data-dlg="hero"></div>
+</div></header>
+
+<main>
+<section class="sec" id="bag" aria-labelledby="h-bag"><div class="wrap">
+  <h2 id="h-bag">가방 속 물건 세 개</h2>
+  <div class="bag">
+    <div class="bagc" id="bag1"><div class="ic">📏</div><h3>① 자 — 돌려도 길이는 그대로</h3><ul>
+      <li>두 점 사이 거리는 차이를 제곱해 더한 뒤 제곱근을 씌웁니다.</li>
+      <li>화살표를 원점 둘레로 돌려도 길이는 변하지 않아요.</li>
+      <li>그래서 돌린 끝점은 언제나 같은 원 위에 있습니다.</li></ul>
+      <div class="lk">앞 복도: <a href="https://adminmrobo.github.io/hilbert_space_lab/e1_ruler_rooms.html#r3">유클리드 3번 방 거리</a>·<a href="https://adminmrobo.github.io/hilbert_space_lab/e2_shadow_rooms.html#r8">8번 방 밀고·돌리고</a> · 쓰이는 방: 2번·4번</div></div>
+    <div class="bagc" id="bag2" style="border-top-color:var(--amber)"><div class="ic">♾️</div><h3>② 끝없는 방의 규칙 — 길이²는 0 이상</h3><ul>
+      <li>길이²는 칸마다 제곱해서 더한 값입니다.</li>
+      <li>제곱은 음수가 될 수 없으니 합도 언제나 0 이상이에요.</li>
+      <li>길이가 0인 점은 원점 하나뿐입니다.</li></ul>
+      <div class="lk">앞 복도: <a href="https://adminmrobo.github.io/hilbert_space_lab/h1_arrow_rooms.html#r3">힐베르트 3번 방 길이·거리·직각</a> · 쓰이는 방: 2번·3번(이 규칙이 깨지는 곳)</div></div>
+    <div class="bagc" id="bag3" style="border-top-color:var(--stain)"><div class="ic">〰️</div><h3>③ 쌍곡선 — 원의 사촌</h3><ul>
+      <li>원은 x² + y² = 일정인 점들입니다.</li>
+      <li>쌍곡선은 x² − y² = 일정인 점들이에요. 부호 하나 차이.</li>
+      <li>일정한 값이 0이면 두 대각선(45°)이 됩니다.</li></ul>
+      <div class="lk">학교 수학: 기하 — 이차곡선 · 쓰이는 방: 4번(관찰자를 바꾸면 사건이 이 곡선 위를 미끄러짐)</div></div>
+  </div>
+  <div data-dlg="bag"></div>
+
+  <h3>실험 ① 자 — 화살표를 돌려도 길이는 5</h3>
+  <div class="panel">
+    <div class="cwrap sq"><canvas id="cv01" aria-label="원점 둘레로 돌릴 수 있는 화살표와 반지름 5인 원"></canvas></div>
+    <div class="ctrl"><div class="group"><label class="glabel" for="s01">돌리는 각도</label><input type="range" id="s01" min="0" max="360" step="5" value="0"><span class="val" id="v01">0°</span></div></div>
+    <div class="minis"><div class="mini m"><span>가로 (x)</span><b id="m01a">—</b></div><div class="mini a"><span>세로 (y)</span><b id="m01b">—</b></div><div class="mini g"><span>x² + y²</span><b id="m01c">—</b></div><div class="mini r"><span>길이</span><b id="m01d">—</b></div></div>
+    <div class="insight" id="i01" aria-live="polite"></div>
+  </div>
+
+  <h3>실험 ② 끝없는 방의 규칙 — 길이²를 음수로 만들 수 있을까?</h3>
+  <div class="panel">
+    <div class="cwrap"><canvas id="cv02" aria-label="세 칸의 값과 각 칸의 제곱 막대, 그 합"></canvas></div>
+    <div class="ctrl"><div class="group">
+      <label class="glabel" for="s02a">1칸</label><input type="range" id="s02a" min="-5" max="5" step="1" value="3"><span class="val" id="v02a">3</span>
+      <label class="glabel" for="s02b">2칸</label><input type="range" id="s02b" min="-5" max="5" step="1" value="-4"><span class="val" id="v02b">−4</span>
+      <label class="glabel" for="s02c">3칸</label><input type="range" id="s02c" min="-5" max="5" step="1" value="0"><span class="val" id="v02c">0</span></div>
+      <div class="group"><button class="bt" type="button" id="b02">미리 보기: 1칸만 빼기로 바꾸면?</button></div></div>
+    <div class="eq" id="eq02"></div>
+    <div class="insight" id="i02" aria-live="polite"></div>
+  </div>
+
+  <h3>실험 ③ 쌍곡선 — 원과 나란히 그려 보기</h3>
+  <div class="panel">
+    <div class="cwrap sq"><canvas id="cv03" aria-label="x² + y² = k인 원과 x² − y² = k인 쌍곡선"></canvas></div>
+    <div class="ctrl"><div class="group"><label class="glabel" for="s03">일정한 값 k</label><input type="range" id="s03" min="-16" max="16" step="1" value="16"><span class="val" id="v03">16</span><button class="bt" type="button" data-k03="16">16</button><button class="bt" type="button" data-k03="0">0</button><button class="bt" type="button" data-k03="-16">−16</button></div></div>
+    <div class="minis"><div class="mini r"><span>원 x² + y² = k</span><b id="m03a" style="font-size:16px">—</b></div><div class="mini g"><span>쌍곡선 x² − y² = k</span><b id="m03b" style="font-size:16px">—</b></div><div class="mini a"><span>곡선 위 한 점</span><b id="m03c" style="font-size:16px">—</b></div><div class="mini m"><span>쓰이는 곳</span><b style="font-size:15px">4번 방</b></div></div>
+    <div class="insight" id="i03" aria-live="polite"></div>
+  </div>
+</div></section>
+
+<section class="sec" id="bridge" aria-labelledby="h-bridge"><div class="wrap">
+  <h2 id="h-bridge">세 방 비교 — 오늘 복도는 무엇이 다른가</h2>
+  <p class="lead">앞의 두 방은 칸마다 제곱해서 <b>더했습니다</b>. 오늘 방은 시간 칸 하나만 <b>뺍니다</b>. 그 마이너스 하나가 무엇을 바꾸는지가 ①편의 이야기입니다.</p>
+  <div class="tblwrap"><table class="cmp"><thead><tr><th>방</th><th>칸 수</th><th>길이² 계산</th><th>길이²의 부호</th><th>돌리면(관찰자를 바꾸면)</th></tr></thead><tbody>
+    <tr><td><a href="https://adminmrobo.github.io/hilbert_space_lab/e1_ruler_rooms.html">유클리드</a></td><td>정해진 n칸</td><td>제곱해서 모두 더하기</td><td>언제나 0 이상</td><td>원 위를 돈다</td></tr>
+    <tr><td><a href="https://adminmrobo.github.io/hilbert_space_lab/h1_arrow_rooms.html">힐베르트</a></td><td>끝없이</td><td>제곱해서 모두 더하기</td><td>언제나 0 이상</td><td>—</td></tr>
+    <tr><td><b>민코프스키</b></td><td>4칸 (시간 1 + 공간 3)</td><td>시간 칸만 빼고 나머지 더하기</td><td><b>음수 · 0 · 양수</b></td><td><b>쌍곡선 위를 미끄러진다</b></td></tr>
+  </tbody></table></div>
+  <details class="fold"><summary>접는 상자 — 이 복도에서 만날 원어</summary><ul>
+    <li><b>민코프스키 공간(Minkowski space)</b> — 시간 1칸과 공간 3칸을 한 무대로 묶은 시공간. 시간 칸만 마이너스로 셉니다.</li>
+    <li><b>사건(event)</b> — 언제·어디를 함께 적은 점 하나.</li>
+    <li><b>시공간 간격(spacetime interval) ds²</b> — 두 사건 사이의 부호 있는 거리².</li>
+    <li><b>쌍곡선(hyperbola)</b> — x² − y² = 일정인 곡선. 고등학교 기하의 이차곡선 단원에 나옵니다.</li>
+  </ul></details>
+</div></section>
+
+<section class="sec" id="check" aria-labelledby="h-check"><div class="wrap">
+  <h2 id="h-check">마지막 점검 — 세 문제</h2>
+  <p class="lead">다 맞히면 1번 방 문이 열립니다. 틀려도 괜찮아요. 힌트에 다시 볼 카드가 적혀 있습니다.</p>
+  <div class="quiz" data-quiz="chk"></div>
+  <div class="endless" id="gate" hidden><h3>1번 방 문이 열렸습니다</h3><p>가방 점검 끝! 벽시계가 걸린 복도로 들어가 볼까요?</p><div class="skip"><a class="bt primary" href="m1_clock_corridor.html">① 시계가 걸린 복도로 →</a></div></div>
+  <div data-dlg="outro"></div>
+  <div class="next"><a href="m1_clock_corridor.html"><b>① 시계가 걸린 복도 →</b><br>사건·마이너스 피타고라스·빛원뿔·쌍곡선·원인과 결과</a><a href="https://adminmrobo.github.io/hilbert_space_lab/"><b>앞 복도</b><br>유클리드 공간 · 힐베르트 공간</a><a href="index.html"><b>목차</b></a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <h3>출처</h3>
+  <table><thead><tr><th>#</th><th>자료</th><th>이 페이지에서 쓴 곳</th></tr></thead><tbody>
+    <tr><td>[1]</td><td>교육부 고등학교 수학·기하 교육과정 (두 점 사이의 거리, 회전, 이차곡선)</td><td>가방 카드 세 장</td></tr>
+    <tr><td>[2]</td><td>안상선, 「유클리드 공간 · 힐베르트 공간」 (hilbert_space_lab, 2026)</td><td>가방 카드 ①·②, 세 방 비교</td></tr>
+    <tr><td>[3]</td><td>인포그래픽 「Minkowski Space」 (@askwhyvalley) — 그림은 새로 그림</td><td>세 방 비교의 민코프스키 줄</td></tr>
+  </tbody></table>
+  <p>캐릭터 이름·설정·그림은 저작권자 안상선의 허락 없이 사용할 수 없습니다.</p>
+  <p>글 · 안상선 ((주)M-Robo 대표) · <a href="https://adminmrobo.github.io/who_am_i/who_am_i.html">저자 소개</a> · <a href="index.html">목차</a> · <a href="m1_clock_corridor.html">①편</a></p>
+</div></footer>
+
+<script>
+/*@@SPRITES@@*/
+/*@@COMMON@@*/
+/*@@PLANE@@*/
+(function(){
+'use strict';
+var $=U.$,$$=U.$$,fmt=U.fmt,cssv=U.cssv;
+function f1(x){return fmt(x,Math.abs(x-Math.round(x))<1e-9?0:2);}
+function sg(x){return x<0?'−'+f1(-x):f1(x);}
+function V(cv,draw){var o={dirty:true};U.reg(cv,function(dt){if(o.dirty||dt===0){draw();o.dirty=false;}});return o;}
+var DLG={
+ hero:[["doc","doc_board","시계가 걸린 복도에 들어가기 전에 가방 점검! 앞 복도에서 쓰던 도구 세 개를 꺼내 보죠."],
+   ["sia","sia_smile","자, 각도기, 끝없는 방… 다 들고 왔어요!"],
+   ["moa","moa_tea","쌍곡선은 처음 들어 봐요. 그것도 가방에 있어야 해요?"],
+   ["robo","robo_smile","시간도 그냥 한 칸 더 붙이면 끝이지! 가방 같은 건 필요 없어."]],
+ bag:[["fly","fly_point","카드만 읽지 말고 실험 세 개를 직접 움직여 봐. 특히 세 번째."],
+   ["asst","asst_spark","원과 쌍곡선, 식에서 부호 하나만 달라요. 숫자로 같이 확인해 봐요."]],
+ outro:[["doc","doc_front","오늘 복도에서는 \"길이는 언제나 0 이상\"이라는 규칙이 깨집니다. 놀라지 말고 들어오세요."],
+   ["sia","sia_guide","1번 방부터 제가 앞장설게요!"],
+   ["moa","moa_ok","저는 부호 확인 담당이에요."]]
+};
+U.dialogues(DLG);U.fillImgs();
+
+/* 쌍곡선 x² − y² = k 위의 점들 (두 갈래). k=0이면 두 대각선 */
+function hyp(k,R){var A=[],B=[],n=80,i,u,umax;
+  if(k===0){return [[[-R,-R],[R,R]],[[-R,R],[R,-R]]];}
+  var a=Math.sqrt(Math.abs(k));umax=Math.log((R+Math.sqrt(R*R+a*a))/a);
+  for(i=0;i<=n;i++){u=-umax+2*umax*i/n;var c=a*Math.cosh(u),s=a*Math.sinh(u);
+    if(k>0){A.push([c,s]);B.push([-c,s]);}else{A.push([s,c]);B.push([s,-c]);}}
+  return [A,B];}
+function curve(P,pts,col,wd){var g=P.g;g.beginPath();pts.forEach(function(p,i){i?g.lineTo(P.X(p[0]),P.Y(p[1])):g.moveTo(P.X(p[0]),P.Y(p[1]));});g.strokeStyle=col;g.lineWidth=wd||2.4;g.stroke();}
+
+/* 표지 그림판: 원과 쌍곡선 */
+new P2($('#coverCv'),{xr:[-9,9],yr:[-5,5],ticks:false,margin:16,axes:['x','t'],draw:function(g,P){
+  g.beginPath();g.arc(P.X(-4.5),P.Y(0),3*P.kx,0,7);g.strokeStyle='rgba(155,63,181,.55)';g.lineWidth=2;g.stroke();
+  P.arrow([-4.5,0],[-4.5+3*Math.cos(0.9),3*Math.sin(0.9)],cssv('--stain'),2);
+  hyp(4,6).forEach(function(b){curve(P,b.map(function(p){return [p[0]+4,p[1]];}),cssv('--amber'),2.2);});
+  P.line([0,-5],[0,5],'rgba(22,33,43,.15)',1);P.text([-4.5,-3.6],'원: 더하기',cssv('--stain'),'center');P.text([4,-3.6],'쌍곡선: 빼기',cssv('--amber'),'center');}});
+
+/* 실험 ① 자 — 돌리기 */
+var T1=0;
+var P1=new P2($('#cv01'),{xr:[-6,6],yr:[-6,6],tick:1,labelTick:2,axes:['x','y'],draw:function(g,P){var t=T1*Math.PI/180,x=3*Math.cos(t)-4*Math.sin(t),y=3*Math.sin(t)+4*Math.cos(t);
+  g.beginPath();g.arc(P.X(0),P.Y(0),5*P.kx,0,7);g.strokeStyle='rgba(155,63,181,.45)';g.lineWidth=1.6;g.setLineDash([5,4]);g.stroke();g.setLineDash([]);
+  P.arrow([0,0],[3,4],'rgba(22,33,43,.2)',2);P.arrow([0,0],[x,y],cssv('--stain'),2.8);P.pt([x,y],cssv('--stain'),'('+fmt(x,2)+', '+fmt(y,2)+')',5);
+  if(T1%360)P.arcAng([0,0],30,Math.atan2(4,3),Math.atan2(4,3)+t,cssv('--amber'));if(T1%360)P.text([3.1,4.4],'처음 (3, 4)',cssv('--muted'));}});
+function up01(){var t=T1*Math.PI/180,x=3*Math.cos(t)-4*Math.sin(t),y=3*Math.sin(t)+4*Math.cos(t);
+  $('#m01a').textContent=fmt(x,2);$('#m01b').textContent=fmt(y,2);$('#m01c').textContent=fmt(x*x+y*y,2);$('#m01d').textContent=fmt(Math.hypot(x,y),2);
+  U.ins($('#i01'),[['g',T1+'° 돌렸더니 끝점이 ('+fmt(x,2)+', '+fmt(y,2)+')로 갔지만, x² + y² = '+fmt(x*x+y*y,2)+'로 그대로입니다.'],['a','돌려도 길이가 그대로라서 끝점은 반지름 5인 원을 벗어나지 않아요. 4번 방에서는 원 대신 쌍곡선이 이 자리를 맡습니다.']]);P1.dirty=true;}
+var r01=$('#s01');r01.oninput=function(){T1=+r01.value;$('#v01').textContent=T1+'°';up01();};up01();
+
+/* 실험 ② 길이²는 0 이상 */
+var C2=[3,-4,0],MIN2=false;
+var v2=V($('#cv02'),function(){var R=U.setup($('#cv02')),g=R.g,w=R.w,h=R.h;U.grid24(g,w,h);
+  var sq=C2.map(function(c,i){return (MIN2&&i===0?-1:1)*c*c;}),sum=sq.reduce(function(a,b){return a+b;},0);
+  var cols=[cssv('--eye'),cssv('--terrain'),cssv('--gfp'),cssv('--amber')],labs=['1칸²','2칸²','3칸²','합'],vals=sq.concat([sum]);
+  var mid=h*0.55,k=(h*0.42)/50,bw=Math.min(70,(w-60)/5),gap=(w-4*bw)/5;
+  g.strokeStyle='rgba(22,33,43,.5)';g.lineWidth=1.4;g.beginPath();g.moveTo(16,mid);g.lineTo(w-16,mid);g.stroke();U.label(g,20,mid-6,'0',cssv('--muted'));
+  vals.forEach(function(v,i){var x=gap+i*(bw+gap),bh=v*k;g.fillStyle=v<0?'rgba(201,48,44,.75)':cols[i];g.globalAlpha=i===3?1:.75;g.fillRect(x,v>=0?mid-bh:mid,bw,Math.abs(bh)||2);g.globalAlpha=1;
+    U.label(g,x+bw/2,v>=0?mid-bh-8:mid-bh+18,sg(v),v<0?cssv('--eye'):cssv('--text'),'center');U.label(g,x+bw/2,h-8,labs[i],cssv('--muted'),'center');});
+  U.stamp(g,w,MIN2?'미리 보기: 1칸을 빼면':'칸마다 제곱해서 더하기');});
+function up02(){var sq=C2.map(function(c,i){return (MIN2&&i===0?-1:1)*c*c;}),sum=sq.reduce(function(a,b){return a+b;},0);
+  $('#eq02').innerHTML='길이² = '+(MIN2?'<b style="color:var(--eye)">−</b>':'')+'('+sg(C2[0])+')² + ('+sg(C2[1])+')² + ('+sg(C2[2])+')² = <b>'+sg(sum)+'</b>';
+  var msg;if(!MIN2)msg=sum===0?'세 칸이 모두 0일 때만 길이²가 0 — 원점 하나뿐입니다.':'제곱은 음수가 안 되니 합 '+sum+'도 0보다 큽니다. 아무리 움직여도 음수는 못 만들어요.';
+  else msg=sum<0?'1칸을 빼기로 바꾸니 '+sg(sum)+' — 음수가 나왔습니다! 오늘 복도의 시간 칸이 바로 이 "빼는 칸"이에요.':sum===0?'원점이 아닌데도 0이 나왔어요('+sg(C2[0])+'² = 나머지 합). 3번 방의 "빛 테두리"가 이런 점입니다.':'양수가 나왔지만, 1칸을 더 키우면 음수도 0도 만들 수 있어요.';
+  U.ins($('#i02'),[['g',msg],['a',MIN2?'앞 복도의 규칙 "길이²는 언제나 0 이상"이 여기서 깨집니다. 버튼을 다시 누르면 원래 규칙으로 돌아가요.':'유클리드·힐베르트 방의 규칙: 길이²는 언제나 0 이상, 0은 원점뿐.']]);v2.dirty=true;}
+[['s02a','v02a',0],['s02b','v02b',1],['s02c','v02c',2]].forEach(function(z){var r=$('#'+z[0]);r.oninput=function(){C2[z[2]]=+r.value;$('#'+z[1]).textContent=sg(+r.value);up02();};});
+$('#b02').onclick=function(){MIN2=!MIN2;this.textContent=MIN2?'원래 규칙으로: 모두 더하기':'미리 보기: 1칸만 빼기로 바꾸면?';this.classList.toggle('primary',MIN2);up02();};up02();
+
+/* 실험 ③ 원과 쌍곡선 */
+var K3=16;
+var P3=new P2($('#cv03'),{xr:[-7,7],yr:[-7,7],tick:1,labelTick:2,axes:['x','y'],draw:function(g,P){
+  if(K3>0){g.beginPath();g.arc(P.X(0),P.Y(0),Math.sqrt(K3)*P.kx,0,7);g.strokeStyle='rgba(155,63,181,.6)';g.lineWidth=2.2;g.stroke();}
+  else if(K3===0)P.pt([0,0],'rgba(155,63,181,.8)','원: 점 하나',4);
+  hyp(K3,7).forEach(function(b){curve(P,b,cssv('--amber'),2.6);});
+  var a=Math.sqrt(Math.abs(K3));if(K3>0){P.pt([5,3],cssv('--amber'),'(5, 3)',4);}else if(K3<0){P.pt([3,5],cssv('--amber'),'(3, 5)',4);}else P.pt([4,4],cssv('--amber'),'(4, 4)',4);}});
+function up03(){var k=K3,c=k>0?'반지름 '+fmt(Math.sqrt(k),2):k===0?'점 하나 (원점)':'없음 (제곱 합은 음수 불가)',hy=k>0?'좌우 두 갈래':k<0?'위아래 두 갈래':'두 대각선 (45°)',pt=k>0?'(5, 3): 25 − 9 = 16':k<0?'(3, 5): 9 − 25 = −16':'(4, 4): 16 − 16 = 0';
+  $('#m03a').textContent=c;$('#m03b').textContent=hy;$('#m03c').textContent=k===16||k===-16||k===0?pt:'—';
+  U.ins($('#i03'),[['g','k = '+sg(k)+': 원은 '+c+', 쌍곡선은 '+hy+'.'],['a',k<0?'원은 k가 음수면 사라지지만, 쌍곡선은 위아래로 뒤집혀 남아 있어요. 빼기가 섞인 식은 음수도 받아 줍니다.':k===0?'k = 0이면 쌍곡선이 45° 두 직선이 됩니다. 3번 방의 "빛 테두리"가 바로 이 두 선이에요.':'(5, 3)은 쌍곡선 위의 점. ①편 4번 방에서 사건 A(시간 5, 거리 3)가 이 곡선 위를 미끄러집니다.']]);P3.dirty=true;}
+var r03=$('#s03');function set03(v){K3=v;r03.value=v;$('#v03').textContent=sg(v);up03();}r03.oninput=function(){set03(+r03.value);};$$('[data-k03]').forEach(function(b){b.onclick=function(){set03(+b.dataset.k03);};});up03();
+
+U.Gloss({'쌍곡선':['쌍곡선','hyperbola','x² − y² = 일정인 점들. 원(x² + y² = 일정)과 부호 하나 차이.'],'길이²':['길이²','squared norm','칸마다 제곱해서 더한 값. 앞 복도에서는 언제나 0 이상.'],'원점':['원점','origin','두 축이 만나는 (0, 0).']},['쌍곡선','길이²']);
+U.Study({quiz:{chk:[
+ {q:'화살표 (3, 4)를 원점 둘레로 90° 돌리면 길이는?',o:['5','7','25','0'],a:0,why:'돌려도 길이는 그대로입니다. (−4, 3)이 되어도 √(16 + 9) = 5.',hint:'실험 ① 자 카드를 다시 보세요.'},
+ {q:'앞 복도(유클리드·힐베르트)에서 길이²가 0이 되는 점은?',o:['원점 하나뿐','대각선 위의 모든 점','없다','음수 칸이 있는 점'],a:0,why:'제곱의 합이 0이려면 모든 칸이 0이어야 합니다.',hint:'실험 ② 끝없는 방의 규칙 — 버튼을 누르기 전 상태.'},
+ {q:'x² − y² = 0인 곡선은 어떤 모양인가요?',o:['45° 두 직선','반지름 0인 원','좌우 두 갈래 쌍곡선','곡선이 없다'],a:0,why:'x² = y²이면 y = x 또는 y = −x — 두 대각선입니다.',hint:'실험 ③에서 k = 0 버튼을 눌러 보세요.'}]}});
+var gate=$('#gate');document.addEventListener('click',function(){setTimeout(function(){var ok=$$('#check .quiz .fb.ok').length;if(ok>=3)gate.hidden=false;},0);});
+U.start();
+})();
+</script>
+</body>
+</html>
