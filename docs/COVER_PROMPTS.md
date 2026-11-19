@@ -5,8 +5,8 @@
 > 받는 순서: ① cover_index를 먼저 받아 그림체를 확인 → ② 그 그림을 참고 그림으로 함께 올려 나머지를 3~5장씩 같은 비율끼리 요청.
 > 크기: 표지 16:9 → 1600×900 WebP, 장면 3:2 → 1200×800 WebP(한 편 합계 600KB 이하). 목차 썸네일·og:image는 표지에서 잘라 별도 폴더에.
 
-## 공통 문구 (모든 요청 끝에 붙인다)
-> 16-bit SNES-era RPG pixel art, crisp pixel edges, limited palette, no anti-aliasing blur, no smooth anime shading. Bright daytime research lab, white walls and white floor tiles dominant (background mostly white), soft teal, orange, navy and red accents. Characters as small chibi pixel sprites (about 48–64 px tall in the scene) faithful to the attached reference sheet: professor with white hair and round glasses in a lab coat; pink-haired assistant Haru; a fruit-fly-headed researcher with a magnifier; a small boxy abacus robot; intern Sia with long black hair and intern Moa with long beige hair, both in maid-style lab outfits. Leave generous empty space on the right for title text. No text, no letters, no numbers drawn in the image.
+## 공통 문구
+> 실제로 붙이는 문구(캐릭터 생김새를 기본 그림에 맞춰 고친 판)는 **docs/genspark_pixel/** 꾸러미의 요청문 4개에 들어 있다. 박사는 흰 줄이 하나 있는 검은 머리와 청록 안경, 하루는 파란 줄이 섞인 분홍 머리 두 갈래 묶음, 초파리 연구원은 붉은 겹눈 헬멧, 주판봇은 베이지 모니터 머리와 주판 몸통, 시아는 검은 긴 머리·검은 메이드풍 연구복, 모아는 밝은 갈색 머리·겨자색 메이드풍 연구복이다.
 
 ## 표지 3장 (16:9)
 
