@@ -52,6 +52,9 @@ const cards = [[5, 3, true], [3, 5, false], [4, 4, true], [-5, 3, false], [5, 4.
 cards.forEach(([dt, dx, want], i) =>
   check(`대결 카드 ${i + 1} (${dt}, ${dx}) → ${want ? "가능" : "불가"}`, canCause(dt, dx) === want, r(interval(dt, dx))));
 
+// 2번 방 빛 확인: 빛이 간 (4,4) — 더하면 32, 빼면 0
+check("빛 (4,4) 더하면 32", euclid(4, 4) === 32);
+
 // AI 답 검사: 자리만 바꾸면 결론이 뒤집힌다
 check("AI검사 (5,5) → 0", interval(5, 5) === 0);
 check("AI검사 (5,6) → +11, 원인 불가", interval(5, 6) === 11 && !canCause(5, 6));
